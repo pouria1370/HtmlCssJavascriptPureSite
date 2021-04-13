@@ -1,0 +1,322 @@
+* {   
+    box-sizing: border-box;
+    }
+    
+    body{
+        margin:0px;
+    }
+    
+    /* NAVBAR*/
+    .navBar{
+        width: 100%;
+        background-color:#222d33;
+        opacity: 0.6;
+         overflow: auto;
+         
+    
+    }
+    .navBar h1{
+        color:#cad0d4 ;
+    }
+    .navBar a{
+        margin: 10px;
+        float:right;
+        color: #cad0d4;
+        opacity:1;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: center;
+        padding: 12px 0;
+    }
+    .navBar :first-child{
+        margin-right: 20px;
+    }
+    .navIcon{
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
+    display: none;
+    margin-bottom: 10px;
+    
+    }
+    .navIcon .bar1{
+        width: 35px;
+        height: 2px;
+        background-color: seashell;
+        display: block;
+        margin-top: 5px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+    }
+    .navIcon .bar2{
+        width: 35px;
+        height: 2px;
+        background-color: seashell;
+        display:block;
+        margin-top: 5px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+    }
+    .navIcon .bar3{
+        width: 35px;
+        height: 2px;
+        background-color: seashell;
+        display: block;
+        margin-top: 5px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+    }
+     .change .bar2{
+    opacity: 0;
+    
+    }
+     .change .bar1{
+        -webkit-transform: rotate(-45deg) translate(-9px,6px);
+     
+        transform: rotate(-45deg) translate(-9px,6px);
+    }
+     .change  .bar3{
+        -webkit-transform: rotate(+45deg) translate(-8px,-8px);
+     
+        transform: rotate(+45deg) translate(-8px,-8px);
+    }
+    
+     .navBar a.active{
+       color: #42b6f5;
+        
+    }
+    .navBar a.brand{
+        float: left;
+        margin-left: 20px;
+    }
+     .navBar a:hover{
+        transform: scale(1.2);flex-wrap: wrap;
+        color: #42b6f5;
+        transition: all 0.35s ease-in-out;
+    }
+    /*MAIN RIGHTSIDE LEFTSIDE*/ 
+    
+    .row{
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+    }
+    .leftSide{
+        -ms-flex: 50%; /* IE10 */
+          flex: 60%; 
+          height: 70vh;     
+          padding: 10px 100px;
+          /* height: 150vh; */
+          background:url("../images/proj3-wallpaint3.jpg") center;
+          background-size: cover;
+        }
+          .leftSide h1{
+              color: #a2b3be;
+              top: 0px;
+              font-size: 45px;
+              opacity: 0.9;
+          }
+          .familyClass{
+              color:#1695da ;
+          }
+         .main{
+             flex:50%
+         }
+         .main_2{
+             display: flex;
+             flex-wrap: wrap;
+         }
+    .main_2 .aboutMeButton{
+        flex: 30%;
+        background-color: #222d33;
+        opacity:1;
+          padding: 20px;
+          width: 30%;
+
+    }
+    .main_2 .aboutMeButton a{
+        display: block;
+        margin-top: 20px;
+        cursor: pointer;
+        width: 100vw;
+        color: #1695da;
+        border-left: 7px solid #a2b3be;
+        padding: 10px;
+
+
+    }
+    .main_2 .aboutMeButton a:hover{
+        color:#a2b3be;
+        transition: ease-in-out 0.4s;
+    }
+    .main_2 .aboutMeButton a.active{
+       transform: scale(0.96);
+       color:#a2b3be;
+       animation: cheshmak 1s ease-in-out 0s infinite alternate-reverse ;
+
+
+    }
+
+    .main_2 .aboutMeCV{
+          background-color: #44144e;
+          opacity: 1;
+          padding: 20px;
+          flex: 70%;
+    }
+    .main_2 .aboutMeCV>*{
+         display: block;
+         
+  }
+  .main_2 .record {
+border-left:5px solid #1695da;
+padding: 12px;
+margin-bottom: 15px;
+margin-right: 60px;
+  }
+  .main_2 .record .Dates{
+      font-family: fantasy;
+      letter-spacing: 2px;
+      color:#a2b3be;
+      font-weight: 100;
+
+  }
+  .main_2 .record .reputation{
+    font-family: fantasy;
+    letter-spacing: 2px;
+    color:#a2b3be;
+    font-weight: 100;
+    font-style: italic;
+    font-kerning: auto;
+    font-stretch: extra-expanded;
+    font-size: 20px;
+}
+.main_2 .record .description{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color:#a2b3be;
+    font-weight: 100;
+    font-stretch: extra-expanded;    
+}
+ 
+  .main_2 .video video{
+      max-width: 100%;
+  }
+  .main_2 .aboutMeNull{
+      color: #42b6f5;
+      animation: cheshmak 3s ease-in-out 0s infinite alternate-reverse ;
+      text-align: center;
+      justify-content: center;
+      font-family: fantasy;
+      letter-spacing: 2px;
+  }
+  .show{
+      display: flex;
+  }
+  .aboutMeCV>*:not(.show){
+      display: none;
+  }
+   
+    /*FOOTER*/
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        background-color:#222d33;
+        opacity: 0.74;
+        padding: 20px;
+    }
+    #socialMedia{
+        flex: 20%;
+    background-color: transparent;
+    padding: 20px;
+    opacity: 0.4;
+    }
+    #socialMedia a{
+        height:50px;
+        margin:1px;
+        bottom:0px;
+        left:0 px;
+        float: left;
+        padding: 20px;
+    }
+    .selectedArticles{
+        flex: 40%;
+        background-color:transparent;
+        color: #a2b3be;
+        opacity: 0.4;
+        
+    }
+    .Contact{
+        flex:60%;
+        background-color: transparent;
+        color:#a2b3be;
+        opacity: 0.4;
+    }
+    
+    #socialMedia  a i{
+        margin: 10px;
+        color:#a2b3be;
+        opacity:0.9;
+        font-size: 1.5rem;
+        font-weight: 700;
+        
+    }
+    #socialMedia a i:hover{
+        transform: scale(1.2);
+        transition: all 0.35s ease-in-out;
+        color: #42b6f5;
+    
+    }
+    tr td:first-child{
+        width: 40%;
+    }
+    
+    
+    
+    /* RESPONSIVE CODES*/
+    
+    @media screen and (max-width:720px){   
+        .navBar{
+            display: none;
+        }
+        .navIcon{
+            display: inline;
+        }
+        .navBar a{
+            display: block;
+            float: none;
+        }
+        .navBar h1{   
+            text-align: center;
+        }
+        .navBar{
+            overflow: hidden; 
+    
+        }
+        .navBar.change {
+            display:block;
+        }
+        .leftSide{
+            padding: 10px;
+        }
+        .leftSide h1{
+            font-size: 20px;
+        }
+        .leftSide h5{
+            font-size: 13px;
+            line-height: 1px;
+        }
+        .mainInfo{
+            padding: 60px ;
+        }
+        .mainInfo.change{
+            visibility: hidden;
+        }
+    
+    }
+    /*Animations*/
+    @keyframes cheshmak{
+        from{opacity: 1;}
+        to{opacity: 0.2;}
+    }

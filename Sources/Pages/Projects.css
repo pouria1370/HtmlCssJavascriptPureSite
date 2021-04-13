@@ -1,0 +1,368 @@
+* {   
+    box-sizing: border-box;
+    }
+    
+    body{
+        margin:0px;
+    }
+    
+    /* NAVBAR*/
+    .navBar{
+        width: 100%;
+        background-color:#222d33;
+        opacity: 0.6;
+        overflow: auto;
+        z-index: 16;
+    
+    }
+    .navBar h1{
+        color:#cad0d4 ;
+    }
+    .navBar a{
+        margin: 10px;
+        float:right;
+        color: #cad0d4;
+        opacity:1;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: center;
+        padding: 12px 0;
+    }
+    .navBar :first-child{
+        margin-right: 20px;
+    }
+    .navIcon{
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
+    display: none;
+    margin-bottom: 10px;
+    
+    }
+    .navIcon .bar1{
+        width: 35px;
+        height: 2px;
+        background-color: seashell;
+        display: block;
+        margin-top: 5px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+    }
+    .navIcon .bar2{
+        width: 35px;
+        height: 2px;
+        background-color: seashell;
+        display:block;
+        margin-top: 5px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+    }
+    .navIcon .bar3{
+        width: 35px;
+        height: 2px;
+        background-color: seashell;
+        display: block;
+        margin-top: 5px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+    }
+     .change .bar2{
+    opacity: 0;
+    
+    }
+     .change .bar1{
+        -webkit-transform: rotate(-45deg) translate(-9px,6px);
+     
+        transform: rotate(-45deg) translate(-9px,6px);
+    }
+     .change  .bar3{
+        -webkit-transform: rotate(+45deg) translate(-8px,-8px);
+     
+        transform: rotate(+45deg) translate(-8px,-8px);
+    }
+    
+     .navBar a.active{
+       color: #42b6f5;
+        
+    }
+    .navBar a.brand{
+        float: left;
+        margin-left: 20px;
+    }
+     .navBar a:hover{
+        transform: scale(1.2);
+        color: #42b6f5;
+        transition: all 0.35s ease-in-out;
+    }
+    /*MAIN RIGHTSIDE LEFTSIDE*/ 
+    
+    .row{
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+    }
+    .leftSide{
+        -ms-flex: 100%; /* IE10 */
+          flex: 100%;
+          height: 70vh;
+          padding: 10px 100px;
+          background:url("../images/proj2-furniture11.jpg") center;
+          background-size: cover;
+        }
+        .leftSide .temporary{
+            color: aliceblue;
+            position: fixed;
+            left: 10px;
+        }
+          .leftSide h1{
+              color: #a2b3be;
+              top: 0px;
+              font-size: 45px;
+              opacity: 0.6;
+          }
+          .familyClass{
+              color:#1695da ;
+          }
+    .mainProject{
+        -ms-flex: 30%; /* IE10 */
+          flex: 30%;
+          background-color: #1695da;
+          opacity: 1;
+          padding: 20px;
+    }
+   
+    .main_2Project{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    /* navside bar for selecting projects*/
+    .navProjectsButton{
+        flex: 15%;
+        background-color: #222d33;
+    
+        
+    }
+    body::-webkit-scrollbar{
+        width: 12px;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: #44144e;
+        outline: 10px solid #42b6f5;
+    }
+    body::-webkit-scrollbar-thumb:hover{
+        background-color: #a2b3be;
+        outline: 10px solid #42b6f5;
+    }
+    
+    
+    .navProjectsButton .navItems{
+        color: #1695da;
+        border-left: 5px solid #a2b3be;
+        margin-bottom:15px;
+        padding: 10px;
+        margin-left: 10px;
+        
+    }
+    .navProjectsButton.oskol{
+        display: block!important;
+        position: fixed;
+        background: #44144e;
+        animation: cheshmak 0.6s ease-in-out alternate-reverse ;
+    }
+    .navProjectsButton .navItems:hover{
+        color:#a2b3be;
+        transition: ease-in-out 0.4s;
+    }
+    .navProjectsButton .navItems.active{
+        transform: scale(0.94);
+       color:#a2b3be;
+       animation: cheshmak 0.8s ease-in-out 0s infinite alternate-reverse ;
+    }
+
+    .cardsProjects{
+        flex: 85%;
+        background-color: aqua;
+    }
+    .cardsProjectsGrid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .cards{
+        flex: 60%;
+        background-color:#44144e;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        grid-gap: 10px;
+        
+    }
+    .cardItems.Fullstack-Projects{
+        background-color: rgb(185, 206, 180);
+        width: 100%;
+        padding: 10px;
+    }
+    .cardItems.Trade-Projects{
+        background-color: rgb(103, 247, 90);
+        width: 100%;
+        padding: 10px;
+    }
+    .cardItems.Robotic-Projects{
+        background-color: rgb(196, 122, 196);
+        width: 100%;
+        padding: 10px;
+    }
+    .cardItems.All-Projects{
+        background-color: cornflowerblue;
+        width: 100%;
+        padding: 10px;
+    }
+    
+   
+ .cardItems video {
+        width: 100%;
+        
+    }
+   
+    .paginationProjects{
+        flex:20%;
+        background-color: #44144e;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+
+    
+    }
+    .pageItems{
+        display:inline-block;
+        background-color: #cad0d4;
+        padding: 10px;
+        margin-left: 3px;
+        border-radius: 3px;
+        margin-bottom: 3px;
+        
+    }
+
+    /*FOOTER*/
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        background-color:#222d33;
+        opacity: 0.74;
+        padding: 20px;
+    }
+    #socialMedia{
+        flex: 20%;
+    background-color: transparent;
+    padding: 20px;
+    opacity: 0.4;
+    }
+    #socialMedia a{
+        height:50px;
+        margin:1px;
+        bottom:0px;
+        left:0 px;
+        float: left;
+        padding: 20px;
+    }
+    .selectedArticles{
+        flex: 40%;
+        background-color:transparent;
+        color: #a2b3be;
+        opacity: 0.4;
+        
+    }
+    .Contact{
+        flex:60%;
+        background-color: transparent;
+        color:#a2b3be;
+        opacity: 0.4;
+    }
+    
+    #socialMedia  a i{
+        margin: 10px;
+        color:#a2b3be;
+        opacity:0.9;
+        font-size: 1.5rem;
+        font-weight: 700;
+        
+    }
+    #socialMedia a i:hover{
+        transform: scale(1.2);
+        transition: all 0.35s ease-in-out;
+        color: #42b6f5;
+    
+    }
+    
+    tr td{
+        width: 40%;
+    }
+    
+    
+    /* RESPONSIVE CODES*/
+    
+    @media screen and (max-width:720px){   
+        .navBar{
+            display: none;
+        }
+        .navIcon{
+            display: inline;
+            position: fixed;
+            right: 10px;
+        }
+        .navBar a{
+            display: block;
+            float: none;
+        }
+        .navBar h1{   
+            text-align: center;
+        }
+        .navBar{
+            overflow: hidden; 
+            position: fixed;
+            top: 40px;
+
+    
+        }
+        .navBar.change {
+            display:block;
+        }
+        .leftSide{
+            padding: 10px;
+        }
+        .leftSide h1{
+            font-size: 20px;
+        }
+        .leftSide h5{
+            font-size: 13px;
+            line-height: 1px;
+        }
+        .mainInfo{
+            padding: 60px ;
+        }
+        .mainInfo.change{
+            visibility: hidden;
+        }
+        .navProjectsButton.change {
+            display: none;
+        }
+        .navProjectsButton{
+        position: fixed;
+        padding: 20px;
+        top: 0px;
+        height: 50%;
+        opacity: 0.9;
+        }
+        
+    
+    }
+   /*Animations*/
+   @keyframes cheshmak{
+    from{opacity: 1;}
+    to{opacity: 0.2;}
+}
